@@ -24,7 +24,7 @@ Proyek ini adalah sebuah **RESTful API** yang dibangun menggunakan Spring Boot u
 **2. Validasi Data** :
 - Menggunakan Spring Validation untuk memastikan bahwa data produk yang diterima oleh API valid sebelum disimpan ke dalam database.
 **3. Dokumentasi API** :
-- Postman: Dokumentasi API dikelola menggunakan Postman. Dokumentasi ini mencakup deskripsi detail dari setiap endpoint, termasuk request dan response body, serta parameter yang diperlukan.
+- [Postman](https://documenter.getpostman.com/view/36968160/2sA3kUF1oE) : Dokumentasi API dikelola menggunakan Postman. Dokumentasi ini mencakup deskripsi detail dari setiap endpoint, termasuk request dan response body, serta parameter yang diperlukan.
 
 #### Arsitektur Proyek :
 - **Controller** : Mengelola permintaan HTTP dan meresponsnya dengan data atau status yang sesuai.
