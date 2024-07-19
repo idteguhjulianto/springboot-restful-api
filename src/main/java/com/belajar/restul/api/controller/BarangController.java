@@ -52,7 +52,12 @@ public class BarangController {
     @GetMapping
     public ResponseEntity<ApiResponse<List<Barang>>> getAllBarangs() {
         List<Barang> barangs = barangService.getAllBarangs();
-        ApiResponse<List<Barang>> response = new ApiResponse<>("Daftar barang berhasil ditemukan", barangs);
-        return ResponseEntity.ok(response);
+        if (barangs.isEmpty()) {
+            ApiResponse<List<Barang>> response = new ApiResponse<>("Tidak ada data barang", null);
+            return ResponseEntity.status(HttpStatus.OK).body(response); // Menggunakan HttpStatus.OK agar body tetap ada
+        } else {
+            ApiResponse<List<Barang>> response = new ApiResponse<>("Daftar barang berhasil ditemukan", barangs);
+            return ResponseEntity.ok(response);
+        }
     }
 }
