@@ -21,6 +21,7 @@ Proyek ini adalah sebuah **RESTful API** yang dibangun menggunakan Spring Boot u
 - **Read** : Mengambil data produk berdasarkan ID atau daftar semua produk.
 - **Update** : Memperbarui data produk yang sudah ada.
 - **Delete** : Menghapus produk dari database berdasarkan ID.
+
 **2. Validasi Data** :
 - Menggunakan Spring Validation untuk memastikan bahwa data produk yang diterima oleh API valid sebelum disimpan ke dalam database.
 **3. Dokumentasi API** :
