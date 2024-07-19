@@ -5,6 +5,8 @@ import com.belajar.restul.api.dto.BarangDTO;
 import com.belajar.restul.api.model.Barang;
 import com.belajar.restul.api.service.BarangService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -23,7 +25,7 @@ public class BarangController {
     public ResponseEntity<ApiResponse<Barang>> createBarang(@Validated @RequestBody BarangDTO barangDTO) {
         Barang createdBarang = barangService.createBarang(barangDTO);
         ApiResponse<Barang> response = new ApiResponse<>("Barang berhasil ditambahkan", createdBarang);
-        return ResponseEntity.ok(response);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     @PutMapping("/{id}")
