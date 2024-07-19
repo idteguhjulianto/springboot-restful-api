@@ -31,7 +31,7 @@ Proyek ini adalah sebuah **RESTful API** yang dibangun menggunakan Spring Boot u
 #### Arsitektur Proyek :
 - **Controller** : Mengelola permintaan HTTP dan meresponsnya dengan data atau status yang sesuai.
 - **Service** : Mengandung logika bisnis untuk operasi CRUD dan interaksi dengan repository.
-- ** Service_impl** : Implementasi logika bisnis yang lebih spesifik, di mana implementasi sebenarnya dari antarmuka service dikelola.
+- **Service_impl** : Implementasi logika bisnis yang lebih spesifik, di mana implementasi sebenarnya dari antarmuka service dikelola.
 - **Repository** : Mengelola akses data ke database menggunakan Spring Data JPA.
 - **Model** : Mewakili entitas produk dengan atribut seperti id, namaBarang, kategori, satuan, harga, stok.
 - **DTO** : Data Transfer Object untuk mempermudah pengiriman data antara client dan server.
